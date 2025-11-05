@@ -5,6 +5,7 @@ import React from 'react';
 // export const Context1=React.createContext();
 import ThemeProvider from './Components/ThemeProvider';
 import Navbar from './Components/Navbar';
+import Counter from './Redux/Counter';
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
     </UserProvider> */}
 <ThemeProvider>
   <Navbar/>
+  <Counter/>
 </ThemeProvider>
     </>
   )
