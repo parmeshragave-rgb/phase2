@@ -1,6 +1,12 @@
-import { createStore } from "redux";
+import { createStore,combineReducers} from "redux";
 import CounterReducer from "./CounterReducer";
-
-const store = createStore(CounterReducer);
+import ThemeReducer from "./ThemeReducer";
+const RootReducer=combineReducers({
+    counter:CounterReducer,
+    theme:ThemeReducer
+})
+const store = createStore(RootReducer);
+export type RootState=  ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch;
 
 export default store;

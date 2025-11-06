@@ -36,7 +36,7 @@ function Counter(props: CounterProps) {
 
 const mapStateToProps = (state:{count:number}) => ({
     
-      count:state.count
+      count:state.counter.count
     
 });
  const mapDispatchToProps = dispatch => {

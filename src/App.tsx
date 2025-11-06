@@ -6,6 +6,7 @@ import React from 'react';
 import ThemeProvider from './Components/ThemeProvider';
 import Navbar from './Components/Navbar';
 import Counter from './Redux/Counter';
+import HooksCounter from './Redux/HooksCounter';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
 <ThemeProvider>
   <Navbar/>
   <Counter/>
+  <HooksCounter/>
 </ThemeProvider>
     </>
   )
