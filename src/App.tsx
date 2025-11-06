@@ -1,12 +1,14 @@
 import './App.css'
 // import ComponentA from './Components/ComponentA'
 // import { UserProvider } from './Components/UseContext'
-import React from 'react';
+// import React from 'react';
 // export const Context1=React.createContext();
 import ThemeProvider from './Components/ThemeProvider';
 import Navbar from './Components/Navbar';
-import Counter from './Redux/Counter';
-import HooksCounter from './Redux/HooksCounter';
+// import Counter from './Redux/Counter/Counter';
+// import HooksCounter from './Redux/Counter/HooksCounter';
+import UserContainer from './Redux/users/UserContainer';
+import Counter from './Redux/RTK/rtkCounter';
 function App() {
 
   return (
@@ -18,8 +20,10 @@ function App() {
     </UserProvider> */}
 <ThemeProvider>
   <Navbar/>
+  {/* <Counter/>
+  <HooksCounter/> */}
+  <UserContainer/>
   <Counter/>
-  <HooksCounter/>
 </ThemeProvider>
     </>
   )

@@ -2,8 +2,8 @@ import { Button, Card, CardActions, CardContent, Toolbar, Typography } from '@mu
 import React from 'react'
 import {useDispatch, useSelector } from 'react-redux'
 import { increment,decrement,clear } from './CounterActions'
-import type { RootState,AppDispatch} from './Store'
-import { changeTheme } from './ThemeReducer'
+import type { RootState,AppDispatch} from '../Store'
+import { changeTheme } from '../ThemeReducer'
 function HooksCounter() {
     const count=useSelector( (state :RootState) => state.counter.count)
     const theme=useSelector( (state :RootState) => state.theme.theme)

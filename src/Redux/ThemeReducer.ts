@@ -1,4 +1,4 @@
-import { CHANGETHEME } from "./CounterTypes";
+import { CHANGETHEME } from "./Counter/CounterTypes";
 
 
 interface InitialThemeState{
