@@ -9,6 +9,11 @@ import Navbar from './Components/Navbar';
 // import HooksCounter from './Redux/Counter/HooksCounter';
 import UserContainer from './Redux/users/UserContainer';
 import Counter from './Redux/RTK/rtkCounter';
+// @ts-ignore: module has no declaration file
+import ZusCounter from './Zustand/ZusCounter.jsx'
+// @ts-ignore: module has no declaration file
+
+import ZusUserList from './Zustand/ZusUserList.jsx'
 function App() {
 
   return (
@@ -22,8 +27,11 @@ function App() {
   <Navbar/>
   {/* <Counter/>
   <HooksCounter/> */}
+  <ZusUserList/>
+  <ZusCounter/>
   <UserContainer/>
   <Counter/>
+  <UserContainer/>
 </ThemeProvider>
     </>
   )

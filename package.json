@@ -16,12 +16,14 @@
     "@mui/material": "^7.3.5",
     "@reduxjs/toolkit": "^2.10.1",
     "axios": "^1.13.2",
+    "immer": "^10.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-redux": "^9.2.0",
     "redux": "^5.0.1",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^3.1.0"
+    "redux-thunk": "^3.1.0",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
