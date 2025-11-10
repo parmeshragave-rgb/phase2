@@ -1,10 +1,10 @@
-import { createSlice} from "@reduxjs/toolkit";
-
+import { createSlice, createAsyncThunk} from "@reduxjs/toolkit";
+import axios from "axios";
 interface CounterState {
   value: number;
 }
 
-const initialState: CounterState = { value: 0 };
+const initialState: CounterState = { value: 0};
 
 const counterSlice = createSlice({
   name: "rtkcounter",
