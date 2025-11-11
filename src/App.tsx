@@ -22,8 +22,8 @@ function App() {
     <>
 
 
-<ParentComponent/>
-<Memo/>
+{/* <ParentComponent/>
+<Memo/> */}
 
 
 
