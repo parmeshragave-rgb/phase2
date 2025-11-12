@@ -1,7 +1,8 @@
+
+import '@testing-library/jest-dom'
 import { cleanup, render, screen } from '@testing-library/react'
 import Greet from './Greet'
-// import Title from '../Perfomance_optimization/Title.jsx'
-describe('Greet component',() => {
+describe('Greet component in .spec',() => {
 
     let name:string;
 
@@ -12,13 +13,13 @@ describe('Greet component',() => {
     afterEach(() => {
         cleanup();
     })
-//     test("renders correctly", () => {
-//     render(<Greet/>)
-//     const textElement = screen.getByText(/hello/i)
-//     expect(textElement).toBeInTheDocument()
-// })
+    it("renders correctly", () => {
+    render(<Greet/>)
+    const textElement = screen.getByText(/hello/i)
+    expect(textElement).toBeInTheDocument()
+})
 
-test("renders with a name prop",() => {
+it("renders with a name prop",() => {
     render(<Greet name={name}/>)
     const textElement=screen.getByText(/hello dhoni/i)
     expect(textElement).toBeInTheDocument()

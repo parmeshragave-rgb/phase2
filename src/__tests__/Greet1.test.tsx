@@ -1,10 +1,8 @@
 import { cleanup, render, screen } from '@testing-library/react'
-import Greet from './Greet'
-// import Title from '../Perfomance_optimization/Title.jsx'
+import Greet from '../Test/Greet'
 describe('Greet component',() => {
 
     let name:string;
-
     beforeEach(() => {
         name='Dhoni'
     })
@@ -12,11 +10,11 @@ describe('Greet component',() => {
     afterEach(() => {
         cleanup();
     })
-//     test("renders correctly", () => {
-//     render(<Greet/>)
-//     const textElement = screen.getByText(/hello/i)
-//     expect(textElement).toBeInTheDocument()
-// })
+    test("renders correctly", () => {
+    render(<Greet/>)
+    const textElement = screen.getByText(/hello/i)
+    expect(textElement).toBeInTheDocument()
+})
 
 test("renders with a name prop",() => {
     render(<Greet name={name}/>)
